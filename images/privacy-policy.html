@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Politique de confidentialité — Project Elone</title>
+<title>Politique de confidentialité — Project Husk</title>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background:#0a0714; color:#e4e8f2; max-width:720px; margin:0 auto; padding:32px 20px 60px; line-height:1.6; }
   h1 { font-size:1.5rem; color:#ffd700; }
@@ -11,37 +11,89 @@
   p { font-size:0.95rem; color:#c2cadb; }
   a { color:#00e5ff; }
   .updated { color:#8890a4; font-size:0.85rem; margin-bottom:24px; }
+  .lang-switch { display:flex; gap:8px; margin-bottom:20px; }
+  .lang-switch button { font-family:inherit; font-size:0.85rem; font-weight:600; padding:6px 16px; border-radius:20px; border:1px solid rgba(0,229,255,0.4); background:transparent; color:#8890a4; cursor:pointer; }
+  .lang-switch button.active { background:#00e5ff; color:#0a0714; border-color:#00e5ff; }
 </style>
 </head>
 <body>
-  <h1>🛡️ Politique de confidentialité — Project Elone</h1>
-  <p class="updated">Dernière mise à jour : 11/07/2026</p>
+  <div class="lang-switch">
+    <button id="btn-fr" class="active" onclick="setLang('fr')">Français</button>
+    <button id="btn-en" onclick="setLang('en')">English</button>
+  </div>
 
-  <h2>Éditeur</h2>
-  <p>Project Elone est développé et édité par un développeur indépendant. Pour toute question relative à cette politique, contactez : <a href="mailto:adressemail">adressemail</a>.</p>
+  <div id="content-fr">
+    <h1>🛡️ Politique de confidentialité — Project Husk</h1>
+    <p class="updated">Dernière mise à jour : 11/07/2026</p>
 
-  <h2>Données stockées</h2>
-  <p>Ta progression de jeu (bâtiments, objets, monnaies, paramètres) est enregistrée uniquement en local sur ton appareil (stockage local de l'application). Elle n'est jamais envoyée sur un serveur, ni associée à ton identité. Désinstaller le jeu ou utiliser le bouton « Réinitialiser la progression » supprime définitivement ces données.</p>
+    <h2>Éditeur</h2>
+    <p>Project Husk est développé et édité par un développeur indépendant. Pour toute question relative à cette politique, contactez : <a href="mailto:huskgaming@proton.me">huskgaming@proton.me</a>.</p>
 
-  <h2>Comptes</h2>
-  <p>Le jeu ne demande ni compte, ni adresse email, ni identifiant personnel pour être joué.</p>
+    <h2>Données stockées</h2>
+    <p>Ta progression de jeu (bâtiments, objets, monnaies, paramètres) est enregistrée uniquement en local sur ton appareil (stockage local de l'application). Elle n'est jamais envoyée sur un serveur, ni associée à ton identité. Désinstaller le jeu ou utiliser le bouton « Réinitialiser la progression » supprime définitivement ces données.</p>
 
-  <h2>Publicités</h2>
-  <p>Le jeu peut proposer des publicités vidéo récompensées, uniquement à la demande du joueur (aucune publicité ne s'affiche sans qu'il appuie sur un bouton « regarder une pub »). Ces publicités sont diffusées par un réseau publicitaire tiers (par exemple Google AdMob), qui peut collecter des identifiants techniques (identifiant publicitaire de l'appareil) selon sa propre politique de confidentialité, indépendante de celle-ci. Nous t'invitons à consulter la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique de confidentialité de Google</a> pour en savoir plus.</p>
+    <h2>Comptes</h2>
+    <p>Le jeu ne demande ni compte, ni adresse email, ni identifiant personnel pour être joué.</p>
 
-  <h2>Notifications</h2>
-  <p>Si tu actives les notifications, le jeu demande la permission de ton appareil pour t'envoyer des rappels locaux (bonus quotidien, etc.). Aucune donnée n'est transmise à un serveur à cette fin ; tu peux désactiver cette permission à tout moment dans les paramètres du jeu ou de ton appareil.</p>
+    <h2>Publicités</h2>
+    <p>Le jeu peut proposer des publicités vidéo récompensées, uniquement à la demande du joueur (aucune publicité ne s'affiche sans qu'il appuie sur un bouton « regarder une pub »). Ces publicités sont diffusées par un réseau publicitaire tiers (par exemple Google AdMob), qui peut collecter des identifiants techniques (identifiant publicitaire de l'appareil) selon sa propre politique de confidentialité, indépendante de celle-ci. Nous t'invitons à consulter la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique de confidentialité de Google</a> pour en savoir plus.</p>
 
-  <h2>Achats intégrés</h2>
-  <p>Les achats intégrés sont traités directement par le magasin d'applications (Google Play / App Store), qui gère lui-même les données de paiement. L'éditeur n'y a jamais accès.</p>
+    <h2>Notifications</h2>
+    <p>Si tu actives les notifications, le jeu demande la permission de ton appareil pour t'envoyer des rappels locaux (bonus quotidien, etc.). Aucune donnée n'est transmise à un serveur à cette fin ; tu peux désactiver cette permission à tout moment dans les paramètres du jeu ou de ton appareil.</p>
 
-  <h2>Enfants</h2>
-  <p>Le jeu contient un humour parodique destiné à un public général et n'est pas spécifiquement conçu pour de jeunes enfants. Il ne collecte aucune donnée personnelle, quel que soit l'âge du joueur.</p>
+    <h2>Achats intégrés</h2>
+    <p>Les achats intégrés sont traités directement par le magasin d'applications (Google Play / App Store), qui gère lui-même les données de paiement. L'éditeur n'y a jamais accès.</p>
 
-  <h2>Tes droits</h2>
-  <p>Aucune donnée personnelle n'étant collectée par l'éditeur, il n'y a rien à demander de « supprimer » côté serveur : tes données de jeu locales restent entièrement sous ton contrôle (export/import de sauvegarde, réinitialisation). Pour toute question, écris à <a href="mailto:adressemail">adressemail</a>.</p>
+    <h2>Enfants</h2>
+    <p>Le jeu contient un humour parodique destiné à un public général et n'est pas spécifiquement conçu pour de jeunes enfants. Il ne collecte aucune donnée personnelle, quel que soit l'âge du joueur.</p>
 
-  <h2>Modifications</h2>
-  <p>Cette politique peut évoluer ; la date de mise à jour en haut de page reflète la dernière version.</p>
+    <h2>Tes droits</h2>
+    <p>Aucune donnée personnelle n'étant collectée par l'éditeur, il n'y a rien à demander de « supprimer » côté serveur : tes données de jeu locales restent entièrement sous ton contrôle (export/import de sauvegarde, réinitialisation). Pour toute question, écris à <a href="mailto:huskgaming@proton.me">huskgaming@proton.me</a>.</p>
+
+    <h2>Modifications</h2>
+    <p>Cette politique peut évoluer ; la date de mise à jour en haut de page reflète la dernière version.</p>
+  </div>
+
+  <div id="content-en" style="display:none;">
+    <h1>🛡️ Privacy Policy — Project Husk</h1>
+    <p class="updated">Last updated: July 11, 2026</p>
+
+    <h2>Publisher</h2>
+    <p>Project Husk is developed and published by an independent developer. For any question about this policy, contact: <a href="mailto:huskgaming@proton.me">huskgaming@proton.me</a>.</p>
+
+    <h2>Stored data</h2>
+    <p>Your game progress (buildings, items, currencies, settings) is saved only locally on your device (the app's local storage). It is never sent to a server, nor linked to your identity. Uninstalling the game or using the "Reset progress" button permanently deletes this data.</p>
+
+    <h2>Accounts</h2>
+    <p>The game does not require an account, email address, or personal identifier to be played.</p>
+
+    <h2>Advertising</h2>
+    <p>The game may offer rewarded video ads, only at the player's request (no ad is ever shown without tapping a "watch an ad" button). These ads are served by a third-party ad network (for example Google AdMob), which may collect technical identifiers (device advertising ID) under its own privacy policy, independent of this one. We invite you to review <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> for more information.</p>
+
+    <h2>Notifications</h2>
+    <p>If you enable notifications, the game asks your device's permission to send local reminders (daily bonus, etc.). No data is transmitted to a server for this purpose; you can disable this permission at any time in the game's or your device's settings.</p>
+
+    <h2>In-app purchases</h2>
+    <p>In-app purchases are processed directly by the app store (Google Play / App Store), which handles payment data itself. The publisher never has access to it.</p>
+
+    <h2>Children</h2>
+    <p>The game contains parody humor aimed at a general audience and is not specifically designed for young children. It does not collect any personal data, regardless of the player's age.</p>
+
+    <h2>Your rights</h2>
+    <p>Since the publisher collects no personal data, there is nothing to request be "deleted" server-side: your local game data remains entirely under your control (save export/import, reset). For any question, write to <a href="mailto:huskgaming@proton.me">huskgaming@proton.me</a>.</p>
+
+    <h2>Changes</h2>
+    <p>This policy may evolve; the update date at the top of the page reflects the latest version.</p>
+  </div>
+
+  <script>
+    function setLang(lang){
+      document.getElementById('content-fr').style.display = lang === 'fr' ? '' : 'none';
+      document.getElementById('content-en').style.display = lang === 'en' ? '' : 'none';
+      document.getElementById('btn-fr').classList.toggle('active', lang === 'fr');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.documentElement.lang = lang;
+    }
+  </script>
 </body>
 </html>
